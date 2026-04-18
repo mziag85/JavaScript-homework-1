@@ -1,28 +1,29 @@
-// პირველი დავალება
+//პირველი დავალება
 
 let a = "3"
 let b = "8"
+let c = "3"
 a = b;
+b = c;
 console.log("a არის" + " " +a );
-b-=5;
 console.log ("b არის" +" "+b);
 
-//მეორე დავალება
+// //მეორე დავალება
 
-let userName = prompt("აკრიფეთ ტექსტი");
-console.log(userName.length);
-let symbols = userName.length;
-console.log("თქვენ აკრიფეთ"+" "+symbols+"სიმბოლო,"+"კიდევ დაგრჩათ"+ (280-symbols) +"სიმბოლო")
-console.log(userName.slice(0, 280));
+ let userName = prompt("აკრიფეთ ტექსტი");
+ console.log(userName.length);
+ let symbols = userName.length;
+ let message = "თქვენ აკრიფეთ"+" "+symbols+"სიმბოლო,"+"კიდევ დაგრჩათ"+ (280-symbols) +"სიმბოლო";
+ console.log(message);
 
 
 
-//მესამე დავალება
+// //მესამე დავალება
 
 let userName = prompt("დაწერეთ თქვენი სახელი");
-
+let firstSlice = userName.slice(0,1);
+let upperCase = firstSlice.toUpperCase();
+let nextSlice = userName.slice(1);
+let lowerCase = nextSlice.toLowerCase();
 let message = "გამარჯობა"
-console.log(userName.slice(0));
-console.log(userName.toUpperCase(0));
-userName.toLowerCase();
-console.log(message +" "+ userName+ "!")
+console.log(message +" "+upperCase+lowerCase+ "!")
